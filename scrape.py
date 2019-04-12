@@ -7,8 +7,8 @@ from bs4 import BeautifulSoup
 
 
 def main():
-    fieldnames = ["donee", "program", "amount", "program_area", "amount",
-                  "region", "purpose", "donee_url"]
+    fieldnames = ["donee", "program", "amount", "program_area", "region",
+                  "purpose", "donee_url"]
     writer = csv.DictWriter(sys.stdout, fieldnames=fieldnames)
     writer.writeheader()
 
@@ -46,7 +46,6 @@ def main():
             "program": program,
             "amount": amount,
             "program_area": program_area,
-            "amount": amount,
             "region": region,
             "purpose": purpose,
             "donee_url": donee_url,

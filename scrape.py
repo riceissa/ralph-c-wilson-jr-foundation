@@ -20,8 +20,8 @@ def main():
         assert len(paras) == 6
 
         if paras[0].em:
-            program = paras[0].em.text.strip()
-            donee = paras[0].span.text.strip()
+            donee = paras[0].em.text.strip()
+            program = paras[0].span.text.strip()
         else:
             program = ""
             donee = paras[0].text.strip()
